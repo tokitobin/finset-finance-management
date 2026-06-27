@@ -11,14 +11,16 @@ This repository was created for **educational, personal growth, and portfolio pu
 * **Master Component Architecture:** Build a scalable, reusable frontend structure capable of handling interactive state and dynamic layouts.
 * **Simulate Real-World Workflows:** Bridge the gap between design and development by treating the Behance specification as a client brief.
 
+**Original Design:** [FinSet on Behance](https://www.behance.net/gallery/198771803/FinSet-Web-App-for-finance-management-UX-UI-design)
+**Design Concept By:** Alvina Hromadetska
+
 ---
 
 ## Tech Stack
 
-* **Framework:** React / Next.js *(Delete or modify based on your choice)*
-* **Styling:** Tailwind CSS *(or SCSS / Styled Components)*
-* **State Management:** React Context API / Zustand *(If applicable)*
-* **Icons & Assets:** Lucide React / React Icons *(If applicable)*
+* **Framework:** React
+* **Styling:** SCSS (Sassy CSS)
+* **Icons & UI Graphics:** Lucide React
 
 ---
 

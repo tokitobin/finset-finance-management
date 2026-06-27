@@ -1,0 +1,9 @@
+.main-button{
+    display: flex;
+    align-items: center;
+    gap: var(--space-200);
+    padding: var(--space-300);
+    width: fit-content;
+    border: 1px solid black;
+    cursor: pointer;
+}

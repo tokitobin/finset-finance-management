@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Lufga';
+  src: url('./assets/fonts/LufgaRegular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('./assets/fonts/LufgaMedium.woff') format('woff');
+  font-weight: 500;
+}
+
+body {
+  font-family: 'Lufga', sans-serif;
+}
+
+// space stylings
+:root{
+  --space-100: 4px;
+  --space-200: 8px;
+  --space-300: 12px;
+  --space-400: 16px;
+  --space-500: 24px;
+  --space-600: 32px;
+  --space-700: 48px;
+}
+
+.h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.gray{
+  color: #A9A9A9;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+$color-themes: (
+  purple: (
+    900: (
+      bg: #5347a1, text: #ffffff,
+    ),
+    800: (
+      bg: #6657c6, text: #ffffff,
+    ),
+    700: (
+      bg: #7664e4, text: #ffffff,
+    ),
+    600: (
+      bg: #8470ff, text: #ffffff,
+    ),
+    500: (
+      bg: #a498ff, text: #1a1a1a,
+    ),
+    400: (
+      bg: #bfb7ff, text: #1a1a1a,
+    ),
+    300: (
+      bg: #d6d2ff, text: #1a1a1a,
+    ),
+    200: (
+      bg: #eceaff, text: #1a1a1a,
+    ),
+    100: (
+      bg: #f5f4ff, text: #1a1a1a,
+    ),
+  ),
+  orange: (
+    500: (
+      bg: #f9970c, text: #fef4e1,
+    ),
+    200: (
+      bg: #fef4e1, text: #f9970c,
+    ),
+  ),
+  red: (
+    500: (
+      bg: #e83838, text: #feebeb,
+    ),
+    200: (
+      bg: #feebeb, text: #e83838,
+    ),
+  ),
+  green: (
+    500: (
+      bg: #297b32, text: #e5fae6,
+    ),
+    200: (
+      bg: #e5fae6, text: #297b32,
+    ),
+  ),
+);
+

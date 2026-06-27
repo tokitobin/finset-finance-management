@@ -1,75 +1,43 @@
-# React + TypeScript + Vite
+# FinSet — Finance Management Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-perfect, responsive frontend implementation of the **FinSet** UI/UX design concept. This project was built to translate high-fidelity design specifications into clean, maintainable, and interactive code.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Purpose & Goals
 
-## React Compiler
+This repository was created for **educational, personal growth, and portfolio purposes**. The primary focus of this project was to:
+* **Advance UI/UX Translation Skills:** Accurately implement complex dashboard layouts, typography, and spacing from a real-world design case study.
+* **Master Component Architecture:** Build a scalable, reusable frontend structure capable of handling interactive state and dynamic layouts.
+* **Simulate Real-World Workflows:** Bridge the gap between design and development by treating the Behance specification as a client brief.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **Framework:** React / Next.js *(Delete or modify based on your choice)*
+* **Styling:** Tailwind CSS *(or SCSS / Styled Components)*
+* **State Management:** React Context API / Zustand *(If applicable)*
+* **Icons & Assets:** Lucide React / React Icons *(If applicable)*
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Architecture & Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The project follows a component-driven architectural pattern, enforcing a clean separation of concerns between global layouts, reusable UI elements, and view-specific features.
 
+```text
+src/
+├── assets/          # Static assets (images, logos, SVGs)
+├── components/      # Reusable, global UI elements (Buttons, Sidebar, Navbar)
+└── features/        # Feature-specific modules (Dashboard layouts, Transaction tables)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Future Roadmap
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+While the initial phase focuses strictly on pixel-perfect frontend presentation, the long-term goal is to transition this into a full-stack financial application. Planned integrations include:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+* **Backend API:** Building a secure RESTful API to handle financial transactions, user data, and account logic.
+* **Database Management:** Integrating a relational database to maintain data integrity for complex financial tracking (e.g., ledgers, user accounts, and monthly histories).
+* **Authentication:** Implementing secure user registration, login sessions, and protected routes.
+* **Dynamic Data:** Replacing hardcoded mock data with real-time state management and server-side responses.
